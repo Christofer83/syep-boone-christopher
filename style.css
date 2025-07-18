@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:darkgreen rbg(140, 182, 182)
+    text-align : center;
+    line-height: 2.1;
+}
+
+
+.hero img{
+
+}
