@@ -5,14 +5,16 @@
 }
 
 body{
-    background-color:darkgreen rbg(140, 182, 182)
+    background-color:darkgreen rgb(140, 182, 182);
     text-align : center;
     line-height: 2.1;
 }
 
-
 .hero img{
+       border-radius: 50%;
+}
 
+<<<<<<< HEAD
 }
 
 @media screen (max-width: 768px)[
@@ -34,3 +36,8 @@ body{
     min-width: 80px;
     
 }
+=======
+.accent{
+    color:darkgreen rgb(150, 46, 18);
+}
+>>>>>>> bf4a98180411887d4552e49eb533fb9a374d6734
