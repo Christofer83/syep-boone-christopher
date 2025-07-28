@@ -6,7 +6,7 @@
 
 body{
     background-color: skyblue;
-    text-align : center;
+    text-align: center;
     line-height: 2.1;
 }
 
@@ -18,7 +18,7 @@ body{
 }
 
 @media screen (max-width: 768px)[
-    body[background-color:green rbg(156, 207, 156)]
+    body[background-color: green;]
 }
 
 .grid{
@@ -30,7 +30,7 @@ body{
 }
 
 .grid div{
-    background-color:cornflowerblue 
+    background-color:cornflowerblue;
     border-radius: 50px;
     padding: 10px;
     min-width: 80px;
