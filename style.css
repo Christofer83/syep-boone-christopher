@@ -40,4 +40,11 @@ body{
 .accent{
     color:darkgreen rgb(150, 46, 18);
 }
+
+#skills{
+   border:2px solid black;
+    padding:10px;
+    margin:10px;
+}
+
 >>>>>>> bf4a98180411887d4552e49eb533fb9a374d6734
