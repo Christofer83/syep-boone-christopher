@@ -1,25 +1,25 @@
 const reviews = [
-{
- id: 1,
- name: 'Susan Smith',
- job: 'Web developer',
- img: "#",
- text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor',
-},
-{
-    id: 2,
-    name: 'Anna Johnsom',
-    job: 'web designer'
-    img: '#',
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor',
-},
-{
-    id: 3,
-name: 'John Doe',
-job: 'plumer'
-img: '#',
-text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor',
-},
+    {
+       id: 1,
+       name: 'Susa  Smith',
+       job: 'web developer',
+       img: '#',
+       text:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+    },
+    {
+      id: 2,
+     name:'Anna ',
+     job: 'web designer',
+     img: '#',
+     text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+    },
+    {
+        id: 3,
+        name: 'mane brrr',
+        job: 'gamer',
+        img: '#',
+        text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+    },
 ];
 
 const img = document.getElementById('person-img');
@@ -27,13 +27,13 @@ const author = document.getElementById('author');
 const job = document.getElementsByClassName('job');
 const info = document.getElementsByClassName('info');
 
-const prevBtm = document.querySelector('.prev-btn');
+const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 
 let currentItem = 0;
 
 //Load initial item
-window.addEventListener('DOMContentLoaded', funtion () {
+window.addEventListener('DOMContentLoaded', function () {
     const item = reviews[currentItem];
     img.src = item.img;
     author.textContent = item.name;
@@ -41,28 +41,37 @@ window.addEventListener('DOMContentLoaded', funtion () {
     info.textContent = item.text;
 });
 
-funtionshowPerson(person){
-const item = reviews[person];
-img.src = item.img:
-author.textContent = item.name;
-job.textContent=item.job;
-info.textContent= item.text;
+function showPerson(person){
+    const item = reviews[person];
+    img.src = item.img;
+    author.textContent = item.name;
+    job.textcontent = item.job;
+    info.textContent = item.text;
 }
 
-nextBtn.AddEventListener('click', funtion(){
-    currentItem++;
-    if (currentItem > reviews.length - 1) {
-currentItem = 0;
-    }
-showPerson(current.Item);
+
+nextBtn.addEventListener('click', function (){
+     currentItem++;
+     if (currentItem > reviews.length - 1) {
+        currentItem = 0;
+     }
+     showPerson(currentItem);
 });
+
 prevBtn.addEventListener('click', function (){
- currentItem--;
- if (currentItem < 0){
-    currentItem = reviews.length - 1;
- }
- showPerson(currentItem);
+    currentItem--;
+    if (currentItem < 0){
+        currentItem = reviews.length - 1;
+    }
+    showPerson(currentItem);
 });
+
+
+
+
+
+
+
 
 
 
@@ -98,11 +107,11 @@ const hour = new Date().getHours();
 let greeting = "";
 
 if (hour<12){
-    greeting = "Good morning ☀️";
+    greeting = "Good morning ";
 }else if (hour<18){
-    greeting = "Good afternoon ☁️";
+    greeting = "Good afternoon ";
 }else{
-    greeting = "Good evening 🌙";
+    greeting = "Good evening ";
 }
 
 document.getElementById("greeting").innerText =greeting;*/
