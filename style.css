@@ -1,51 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(128, 211, 244);
+body {
+    background-color: skyblue !important;
     text-align: center;
     line-height: 2.1;
 }
 
-.hero img{
-       border-radius:50%;
+.hero img {
+    border-radius: 50%;
 }
 
-<<<<<<< HEAD
+.accent {
+    color: blue;
 }
 
-@media screen (max-width: 768px)[
-    body[background-color: green;]
+#skills {
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
 }
 
-.grid{
+.grid {
     display: flex;
     justify-content: center;
-   /* justify-content: space-around; */
-   gap:15px;
-   flex-wrap: wrap;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.grid div{
+.grid div {
     background-color: cornflowerblue;
     border-radius: 50px;
     padding: 10px;
     min-width: 80px;
-    
-}
-=======
-.accent{
-    color:darkgreen;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
-#skills{
-   border:2px solid black;
-    padding:10px;
-    margin:10px;
-    background-color: green;
+.grid div:hover {
+    background-color: #0815c7;
+    color: #222;
+    transform: scale(1.08);
 }
 
->>>>>>> bf4a98180411887d4552e49eb533fb9a374d6734
+.navbar {
+    background-color: skyblue !important;
+}
+
+.nav-link {
+    transition: background 0.2s, color 0.2s;
+    border-radius: 8px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: #03869b;
+    color: #0074d9 !important;
+}
+
+.testimonial-box {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    background: transparent;
+}
+
+.about-box {
+    border: 2px solid black;
+    border-radius: 0;         /* No rounded corners */
+    padding: 24px 16px;      /* More vertical, less horizontal padding */
+    margin: 20px auto;
+    max-width: 1000px;        /* Less width */
+    min-height: 20px;       /* More length */
+    background: transparent;
+    color: black;
+}
+
+.prev-btn,
+.next-btn {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
