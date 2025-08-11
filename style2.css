@@ -266,4 +266,8 @@ cursor: pointer;
 .random-btn:hover {
 background: var(--clr-primary-5);
 color: var(--clr-primary-1);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9d51578f4f7b962554d322d9f76cdbade0c06fbf
