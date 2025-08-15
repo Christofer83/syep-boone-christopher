@@ -10,14 +10,14 @@ const reviews = [
       id: 2,
      name:'Karelys Silva',
      job: 'Global Teacher',
-     img: 'images2.jpeg',
+     img: 'images (1).jpeg',
      text: 'Chris is a great student who works hard in my class and cares about learning, moreover he is a helpful hand towards other students in my class and he does not cause any problems in class and keeps to himself, not bothering anybody or letting anybody distract him from his work. Chris is a kind student and always has the motive to do his best in class, even if he doesnt understand, he is always willing to try.',
     },
     {
         id: 3,
         name: 'Colleen Duda',
         job: 'Earth Science Teacher',
-        img: 'images3.jpeg',
+        img: '20250815_111103.jpg',
         text: 'Christofer was not the best in my class, but one thing that he did have was dedication, he was always willing to try learning even if he could not understand the material, always coming to afterschool for tutoring and making up for lab time that he missed, his dedication to try to understand the work showed how much strive he has making him a hard dedicated student in my class. ',
     },
 ];
