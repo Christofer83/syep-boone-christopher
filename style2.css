@@ -186,8 +186,8 @@ box-shadow: var(--dark-shadow);
 }
 .img-container {
 position: relative;
-width: 150px;
-height: 150px;
+width: 110px;
+height: 110px;
 border-radius: 50%;
 margin: 0 auto;
 margin-bottom: 1.5rem;
