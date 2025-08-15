@@ -1,31 +1,31 @@
 const reviews = [
     {
        id: 1,
-       name: 'Susa  Smith',
-       job: 'web developer',
-       img: '#',
-       text:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+       name: 'Matheu Jefferson',
+       job: 'Mathematics Teacher',
+       img: '',
+       text:'Christofer is a student who is always dedicated to his work and consistently puts effort to succeed academically. Beyond that he is also a very supportive and helpful classmate making him a great person to work with. His ability to be able to work with others and not be afraid to ask for any help when needed is a great quality to have, and with these qualities I wont be suprised if he continues to succeed in the future.',
     },
     {
       id: 2,
-     name:'Anna ',
-     job: 'web designer',
-     img: '#',
-     text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+     name:'Karelys Silva',
+     job: 'Global Teacher',
+     img: '',
+     text: 'Chris is a great student who works hard in my class and cares about learning, moreover he is a helpful hand towards other students in my class and he does not cause any problems in class and keeps to himself, not bothering anybody or letting anybody distract him from his work. Chris is a kind student and always has the motive to do his best in class, even if he doesnt understand, he is always willing to try.',
     },
     {
         id: 3,
-        name: 'mane brrr',
-        job: 'gamer',
-        img: '#',
-        text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+        name: 'Colleen Duda',
+        job: 'Earth Sceience Teacher',
+        img: '',
+        text: 'Christofer was not the best in my class, but one thing that he did have was dedication, he was always willing to try learning even if he could not understand the material, always coming to afterschool for tutoring and making up for lab time that he missed, his dedication to try to understand the work showed how much strive he has making him a hard dedicated student in my class. ',
     },
 ];
 
 const img = document.getElementById('person-img');
 const author = document.getElementById('author');
-const job = document.getElementsByClassName('job');
-const info = document.getElementsByClassName('info');
+const job = document.getElementById('job'); // FIXED: use getElementById
+const info = document.getElementById('info'); // FIXED: use getElementById
 
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -45,7 +45,7 @@ function showPerson(person){
     const item = reviews[person];
     img.src = item.img;
     author.textContent = item.name;
-    job.textcontent = item.job;
+    job.textContent = item.job; // FIXED: capital C
     info.textContent = item.text;
 }
 
